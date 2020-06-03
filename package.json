@@ -1,0 +1,43 @@
+{
+  "name": "v5poc",
+  "version": "1.0.0",
+  "description": "JS SDK v5 POC",
+  "main": "dist/index.js",
+  "scripts": {
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "tslint -p tsconfig.json",
+    "build": "npm run clean; tsc -p tsconfig.json",
+    "clean": "rm -rf dist",
+    "test": "jest"
+  },
+  "author": "Rai Phairow",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^25.1.4",
+    "@types/node-fetch": "^2.5.7",
+    "jest": "^25.2.4",
+    "jest-junit": "^10.0.0",
+    "node-fetch": "^2.6.0",
+    "prettier": "^2.0.2",
+    "ts-jest": "^25.3.0",
+    "tslint": "^6.1.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.8.3"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "reporters": [
+      "default",
+      "jest-junit"
+    ],
+    "testRegex": "\\.spec\\.(js|ts)$",
+    "moduleFileExtensions": [
+      "js",
+      "ts"
+    ]
+  }
+}
