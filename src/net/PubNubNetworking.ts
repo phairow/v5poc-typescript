@@ -1,7 +1,6 @@
-import { Networking } from "./Networking";
-import { HttpRequest } from "./http/HttpRequest";
-import { HttpResponse } from "./http/HttpResponse";
-import * as fetch from "node-fetch";
+import { Networking } from "core/modules/net/Networking";
+import { HttpRequest } from "core/modules/net/http/HttpRequest";
+import { HttpResponse } from "core/modules/net/http/HttpResponse";
 
 export class PubNubNetworking implements Networking {
   executeHttpRequest(request: HttpRequest): { abort: () => void, response: Promise<HttpResponse> } {
@@ -12,8 +11,8 @@ export class PubNubNetworking implements Networking {
         controller.abort();
       },
       response: new Promise<HttpResponse>((resolve, reject) => {
-        fetch.default(request.url, {
-          signal: controller.signal as any,
+        fetch(request.url, {
+          signal: controller.signal,
           method: request.method,
           body: request.body,
           headers: request.headers,
@@ -34,5 +33,5 @@ export class PubNubNetworking implements Networking {
         });
       })
     };
-  };
+  }
 }

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="1" failures="0" time="5.515">
-  <testsuite name="PubNubSdk" errors="0" failures="0" skipped="0" timestamp="2020-06-02T21:35:11" time="4.168" tests="1">
-    <testcase classname="PubNubSdk hi" name="PubNubSdk hi" time="0.038">
-    </testcase>
-  </testsuite>
-</testsuites>

@@ -1,4 +1,4 @@
-import { Parser } from "./Parser";
+import { Parser } from "core/modules/parse/Parser";
 
 export class PubNubParser implements Parser {
   fromJsonString<OutputType>(input: string): OutputType {
