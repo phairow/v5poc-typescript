@@ -1,12 +1,12 @@
-import { Config } from "core/cfg/Config";
-import { Networking } from "core/modules/net/Networking";
-import { Pam } from "core/auth/Pam";
-import { Crypto } from "core/crypto/Crypto";
-import { StateManager } from "core/state/StateManager";
-import { TelemetryManager } from "core/telemetry/TelemetryManager";
-import { TokenManager } from "core/modules/token/TokenManager";
-import { Logger } from "core/modules/log/Logger";
-import { Parser } from "core/modules/parse/Parser";
+import { Config } from "./cfg/Config";
+import { Networking } from "./modules/net/Networking";
+import { Pam } from "./auth/Pam";
+import { Crypto } from "./crypto/Crypto";
+import { StateManager } from "./state/StateManager";
+import { TelemetryManager } from "./telemetry/TelemetryManager";
+import { TokenManager } from "./modules/token/TokenManager";
+import { Logger } from "./modules/log/Logger";
+import { Parser } from "./modules/parse/Parser";
 
 export class Core {
     public auth: Pam = new Pam();

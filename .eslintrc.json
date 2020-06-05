@@ -17,7 +17,5 @@
     "@typescript-eslint/no-empty-interface": "off",
     "@typescript-eslint/no-inferrable-types": "off"
   },
-  "globals": {
-    "global": true
-  }
+  "ignorePatterns": [ "*.js" ]
 }

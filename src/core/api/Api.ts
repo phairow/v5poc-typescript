@@ -1,6 +1,6 @@
-import { Logger } from "core/modules/log/Logger";
-import { Networking } from "core/modules/net/Networking";
-import { Parser } from "core/modules/parse/Parser";
+import { Logger } from "../modules/log/Logger";
+import { Networking } from "../modules/net/Networking";
+import { Parser } from "../modules/parse/Parser";
 import { ListingAllRegisteredChannelGroupsGet } from './endpoint/ListingAllRegisteredChannelGroupsGet';
 import { AllChannelsOfAChannelGroupGet } from './endpoint/AllChannelsOfAChannelGroupGet';
 import { DeletingAChannelGroupGet } from './endpoint/DeletingAChannelGroupGet';

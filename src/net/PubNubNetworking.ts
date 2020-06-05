@@ -1,6 +1,6 @@
-import { Networking } from "core/modules/net/Networking";
-import { HttpRequest } from "core/modules/net/http/HttpRequest";
-import { HttpResponse } from "core/modules/net/http/HttpResponse";
+import { Networking } from "../core/modules/net/Networking";
+import { HttpRequest } from "../core/modules/net/http/HttpRequest";
+import { HttpResponse } from "../core/modules/net/http/HttpResponse";
 
 export class PubNubNetworking implements Networking {
   executeHttpRequest(request: HttpRequest): { abort: () => void, response: Promise<HttpResponse> } {

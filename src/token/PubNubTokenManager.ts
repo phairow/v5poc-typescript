@@ -1,4 +1,4 @@
-import { TokenManager } from "core/modules/token/TokenManager";
+import { TokenManager } from "../core/modules/token/TokenManager";
 
 export class PubNubTokenManager implements TokenManager {
     
