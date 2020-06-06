@@ -1,0 +1,25 @@
+{
+  "name": "pubnub-api",
+  "version": "1.0.0",
+  "author": "PubNub <support@pubnub.com>",
+  "description": "PubNub JS SDK API",
+  "license": "MIT",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "scripts": {
+    "build": "npm run clean; rollup -c",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "pubnub-core": "^1.0.0"
+  },
+  "devDependencies": {
+    "rollup": "^2.13.1",
+    "rollup-plugin-terser": "^6.1.0",
+    "rollup-plugin-typescript2": "^0.27.1",
+    "typescript": "^3.9.5"
+  },
+  "engine": {
+    "node": ">=12"
+  }
+}

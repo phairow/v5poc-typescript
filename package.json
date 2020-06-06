@@ -1,24 +1,14 @@
 {
-  "name": "v5poc",
+  "name": "pubnub-js",
+  "private": true,
   "version": "1.0.0",
-  "description": "JS SDK v5 POC",
-  "main": "./dist/cjs/index.js",
-  "module": "./dist/esm5/index.js",
-  "browser": "./dist/web/PubNub.js",
-  "types": "./dist/types/index.d.ts",
-  "exports": {
-    "import": "./dist/esm/index.js",
-    "require": "./dist/cjs/index.js"
-  },
+  "author": "PubNub <support@pubnub.com>",
+  "description": "PubNub JS SDK Build",
+  "license": "MIT",
+  "type": "module",
   "scripts": {
-    "format": "prettier --write \"src/**/*.ts\"",
-    "lint": "eslint ./src --ext .ts",
-    "build": "npm run clean; tsc -b tsconfig.cjs.json tsconfig.esm.json tsconfig.esm5.json tsconfig.types.json; rollup -c",
-    "clean": "rm -rf dist",
     "test": "jest"
   },
-  "author": "Rai Phairow",
-  "license": "MIT",
   "dependencies": {},
   "devDependencies": {
     "@types/jest": "^25.1.4",
@@ -26,11 +16,13 @@
     "@typescript-eslint/eslint-plugin": "^3.1.0",
     "@typescript-eslint/parser": "^3.1.0",
     "eslint": "^6.8.0",
+    "eslint-plugin-import": "^2.20.2",
     "jest": "^25.2.4",
     "jest-junit": "^10.0.0",
     "prettier": "^2.0.2",
     "rollup": "^2.13.1",
     "rollup-plugin-terser": "^6.1.0",
+    "rollup-plugin-typescript2": "^0.27.1",
     "ts-jest": "^25.3.0",
     "typescript": "^3.9.5"
   },
@@ -44,5 +36,8 @@
       "jest-junit"
     ],
     "testRegex": "\\.spec\\.(js|ts)$"
+  },
+  "engine": {
+    "node": ">=12"
   }
 }

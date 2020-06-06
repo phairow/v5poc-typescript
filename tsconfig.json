@@ -16,7 +16,7 @@
     "esModuleInterop": true,
     "stripInternal": false,
     "target": "esnext",
-    "baseUrl": "src",
+    "baseUrl": ".",
     "lib": [
       "dom",
       "dom.iterable",
@@ -27,6 +27,6 @@
       "jest"
     ]
   },
-  "include": [ "src" ],
+  "include": [ "." ],
   "exclude": [ "node_modules" ]
 }

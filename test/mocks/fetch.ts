@@ -1,5 +1,4 @@
 
-import pn from '../../src'
 export const mockFetch = (options: {
   ok?: boolean,
   url?: string,
@@ -12,8 +11,6 @@ export const mockFetch = (options: {
   redirected?: boolean,
   bodyUsed?: boolean,
 } = {}): void => {
-let a = new pn();
-
   const mockSuccesstext = options.text || "hi there mock fetch";
   const mockTextPromise = Promise.resolve(mockSuccesstext);
   const mockSuccessJson = options.json || { message: mockSuccesstext };
